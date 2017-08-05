@@ -18,6 +18,8 @@ import {
 
 const { width, height } = Dimensions.get('window')
 
+const font = ((Platform.OS === 'android') ? ('Roboto') : ('Arial'))
+
 /**
  * Default styles
  * @type {StyleSheetPropType}
@@ -88,7 +90,7 @@ const styles = {
   buttonText: {
     fontSize: 50,
     color: '#007aff',
-    fontFamily: 'Arial'
+    fontFamily: font
   }
 }
 
